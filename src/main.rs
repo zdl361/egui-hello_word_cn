@@ -8,7 +8,7 @@ fn main() -> Result<(), eframe::Error> {
         ..Default::default()
     };
     eframe::run_native(
-        "Hello word", //应用程序名称
+        "Hello world", //应用程序名称
         options,
         Box::new(|_cc| Box::<MyApp>::new(MyApp::new(_cc))), //第三个参数为程序构建器(eframe::AppCreator类型)负责创建应用程序上下文(egui::Context)。_cc为&CreationContextl类型，_cc.egui_ctx字段即为Context。
 //之所以强调Context的创建过程，是因为显示中文字体需要配置Context。
